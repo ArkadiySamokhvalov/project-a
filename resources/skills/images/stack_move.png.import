@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df6s1hqo4ds5h"
-path="res://.godot/imported/piloting_03.png-0104084302542401ae4dc94f37d05419.ctex"
+uid="uid://bfubj2nsp5daf"
+path="res://.godot/imported/stack_move.png-089a50d86ff1b3422bca74a588ad5a62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/skills/placeholders/piloting_03.png"
-dest_files=["res://.godot/imported/piloting_03.png-0104084302542401ae4dc94f37d05419.ctex"]
+source_file="res://resources/skills/images/stack_move.png"
+dest_files=["res://.godot/imported/stack_move.png-089a50d86ff1b3422bca74a588ad5a62.ctex"]
 
 [params]
 

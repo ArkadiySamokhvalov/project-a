@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://blvulpy5wp1dj"]
+
+[ext_resource type="Script" uid="uid://r2yhswpab4nk" path="res://resources/skill_data.gd" id="1_h7rgm"]
+
+[resource]
+script = ExtResource("1_h7rgm")
+skill_name = "Перегрузка"
+type = 2
+description = "При обмене местами с блоком  выпускает импульс вокруг новой позиции, отталкивая ВСЕ соседние объекты на 1 клетку в стороны. Если оттолкнутый объект врезается в край поля или препятствие, он получает 1 урон."
+metadata/_custom_type_script = "uid://r2yhswpab4nk"

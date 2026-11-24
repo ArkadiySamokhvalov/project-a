@@ -1,11 +1,19 @@
 [gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://b4f4t1tx5wofs"]
 
 [ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_0vjvm"]
+[ext_resource type="Resource" uid="uid://xiv6p05fx16l" path="res://resources/skills/proxy_active_1.tres" id="1_q3k5a"]
 [ext_resource type="Texture2D" uid="uid://chta0k5f0lced" path="res://resources/ships/images/proxy.png" id="2_42q4w"]
+[ext_resource type="Resource" uid="uid://crte0porerikj" path="res://resources/skills/proxy_active_2.tres" id="2_ev2gc"]
+[ext_resource type="Resource" uid="uid://msokem6fnenp" path="res://resources/skills/move.tres" id="3_2pbuc"]
+[ext_resource type="Resource" uid="uid://vn4oala4kkx0" path="res://resources/skills/proxy_passive.tres" id="4_2j6bh"]
 
 [resource]
 script = ExtResource("1_0vjvm")
 ship_name = "Прокси"
 ship_texture = ExtResource("2_42q4w")
 visual_scale = Vector2(0.9, 0.9)
+move_skill = ExtResource("3_2pbuc")
+active_skill_1 = ExtResource("1_q3k5a")
+active_skill_2 = ExtResource("2_ev2gc")
+passive_skill = ExtResource("4_2j6bh")
 metadata/_custom_type_script = "uid://byxjmy0w01tjw"

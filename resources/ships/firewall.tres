@@ -1,11 +1,19 @@
 [gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://t36mpkh4xq6x"]
 
+[ext_resource type="Resource" uid="uid://dsd5afcmyv6kg" path="res://resources/skills/firewall_active_1.tres" id="1_ckfgo"]
 [ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_n2i7u"]
 [ext_resource type="Texture2D" uid="uid://f0ud6tjcdo7d" path="res://resources/ships/images/firewall.png" id="2_2d5sy"]
+[ext_resource type="Resource" uid="uid://cqph7qtnoe4fr" path="res://resources/skills/firewall_active_2.tres" id="2_8ce2y"]
+[ext_resource type="Resource" uid="uid://msokem6fnenp" path="res://resources/skills/move.tres" id="3_xvjtm"]
+[ext_resource type="Resource" uid="uid://blvulpy5wp1dj" path="res://resources/skills/firewall_passive.tres" id="4_xvjtm"]
 
 [resource]
 script = ExtResource("1_n2i7u")
 ship_name = "Фаерволл"
 ship_texture = ExtResource("2_2d5sy")
 visual_scale = Vector2(0.9, 0.9)
+move_skill = ExtResource("3_xvjtm")
+active_skill_1 = ExtResource("1_ckfgo")
+active_skill_2 = ExtResource("2_8ce2y")
+passive_skill = ExtResource("4_xvjtm")
 metadata/_custom_type_script = "uid://byxjmy0w01tjw"

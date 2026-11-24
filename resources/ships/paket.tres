@@ -1,11 +1,19 @@
 [gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://beiy6coh2c56a"]
 
 [ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_7ukkj"]
+[ext_resource type="Resource" uid="uid://ci4806kwd6hhq" path="res://resources/skills/paket_active_1.tres" id="1_rt56c"]
+[ext_resource type="Resource" uid="uid://cwnp2qb303jus" path="res://resources/skills/paket_active_2.tres" id="2_8tasf"]
 [ext_resource type="Texture2D" uid="uid://b8ctnavrosa1f" path="res://resources/ships/images/paket.png" id="2_d0wnw"]
+[ext_resource type="Resource" uid="uid://b7rla3thcd4uj" path="res://resources/skills/paket_move.tres" id="3_fmidg"]
+[ext_resource type="Resource" uid="uid://dstl80mmbuhiv" path="res://resources/skills/paket_passive.tres" id="4_16ybp"]
 
 [resource]
 script = ExtResource("1_7ukkj")
 ship_name = "Пакет"
 ship_texture = ExtResource("2_d0wnw")
 rotate_for_team = true
+move_skill = ExtResource("3_fmidg")
+active_skill_1 = ExtResource("1_rt56c")
+active_skill_2 = ExtResource("2_8tasf")
+passive_skill = ExtResource("4_16ybp")
 metadata/_custom_type_script = "uid://byxjmy0w01tjw"

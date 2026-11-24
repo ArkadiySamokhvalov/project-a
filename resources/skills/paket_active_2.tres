@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://cwnp2qb303jus"]
+
+[ext_resource type="Texture2D" uid="uid://bt7hxyxdow758" path="res://resources/skills/images/paket_active_2.png" id="1_5n7wg"]
+[ext_resource type="Script" uid="uid://r2yhswpab4nk" path="res://resources/skill_data.gd" id="1_acrxg"]
+
+[resource]
+script = ExtResource("1_acrxg")
+skill_name = "Смена линии"
+icon = ExtResource("1_5n7wg")
+description = "Перескок по вертикали на 1 клетку вверх или вниз с мгновенным рывком на 1–2 клетки вбок."
+metadata/_custom_type_script = "uid://r2yhswpab4nk"

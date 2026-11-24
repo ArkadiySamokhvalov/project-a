@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://dsd5afcmyv6kg"]
+
+[ext_resource type="Script" uid="uid://r2yhswpab4nk" path="res://resources/skill_data.gd" id="1_esxn3"]
+
+[resource]
+script = ExtResource("1_esxn3")
+skill_name = "Файрвол-блок"
+description = "Создает нейтральный блок на пустой клетке в радиусе 2 клеток. Блок разрушается при любом столкновении."
+metadata/_custom_type_script = "uid://r2yhswpab4nk"

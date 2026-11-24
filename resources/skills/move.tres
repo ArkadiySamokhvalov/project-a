@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://msokem6fnenp"]
+
+[ext_resource type="Script" uid="uid://r2yhswpab4nk" path="res://resources/skill_data.gd" id="1_64k48"]
+[ext_resource type="Texture2D" uid="uid://buhqptpv046w5" path="res://resources/skills/images/move.png" id="1_lbnxf"]
+
+[resource]
+script = ExtResource("1_64k48")
+skill_name = "Движение"
+type = 0
+icon = ExtResource("1_lbnxf")
+description = "Сдвиньтесь на 1 клетку по вертикали или по горизонтали."
+metadata/_custom_type_script = "uid://r2yhswpab4nk"

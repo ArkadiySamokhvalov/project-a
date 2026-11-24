@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f26ahcwjpjo3"
-path="res://.godot/imported/recon_sensors_01.png-db286b995cec41fa7f6a652736b7867f.ctex"
+uid="uid://knb4w15dmkt"
+path="res://.godot/imported/paket_passive.png-5cc9b479db04784a051006689a4ae536.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/skills/placeholders/recon_sensors_01.png"
-dest_files=["res://.godot/imported/recon_sensors_01.png-db286b995cec41fa7f6a652736b7867f.ctex"]
+source_file="res://resources/skills/images/paket_passive.png"
+dest_files=["res://.godot/imported/paket_passive.png-5cc9b479db04784a051006689a4ae536.ctex"]
 
 [params]
 

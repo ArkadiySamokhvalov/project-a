@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://xiv6p05fx16l"]
+
+[ext_resource type="Script" uid="uid://r2yhswpab4nk" path="res://resources/skill_data.gd" id="1_pbxev"]
+
+[resource]
+script = ExtResource("1_pbxev")
+skill_name = "Установка барьера"
+description = "Ставит энергетический заслон на любое ребро клетки в радиусе 2 клеток (живет 2 раунда или до столкновения). Останавливает движение и отталкивает пытающегося пройти врага на 1 клетку назад."
+metadata/_custom_type_script = "uid://r2yhswpab4nk"

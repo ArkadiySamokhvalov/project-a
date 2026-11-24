@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://ci4806kwd6hhq"]
+
+[ext_resource type="Texture2D" uid="uid://ecdo4eqdeuyg" path="res://resources/skills/images/paket_active_1.png" id="1_05cwp"]
+[ext_resource type="Script" uid="uid://r2yhswpab4nk" path="res://resources/skill_data.gd" id="1_uttha"]
+
+[resource]
+script = ExtResource("1_uttha")
+skill_name = "Разгон"
+icon = ExtResource("1_05cwp")
+description = "Рывок по горизонтали на 3 клетки до первого препятствия. Наносит 1 урон при таране врага."
+metadata/_custom_type_script = "uid://r2yhswpab4nk"

@@ -1,11 +1,19 @@
 [gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://cb0wnfocvjghe"]
 
+[ext_resource type="Resource" uid="uid://cjeh0p747s05r" path="res://resources/skills/stack_active_1.tres" id="1_8ns6y"]
 [ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_wix6d"]
+[ext_resource type="Resource" uid="uid://h2rttx3afd3x" path="res://resources/skills/stack_active_2.tres" id="2_3vtc6"]
 [ext_resource type="Texture2D" uid="uid://ddjjogdo2fojw" path="res://resources/ships/images/stack.png" id="2_16b3s"]
+[ext_resource type="Resource" uid="uid://1folmigskqyw" path="res://resources/skills/stack_move.tres" id="3_ejhsm"]
+[ext_resource type="Resource" uid="uid://b0lxqiryfn6ui" path="res://resources/skills/stack_passive.tres" id="4_loe00"]
 
 [resource]
 script = ExtResource("1_wix6d")
 ship_name = "Стэк"
 ship_texture = ExtResource("2_16b3s")
 visual_scale = Vector2(0.9, 0.9)
+move_skill = ExtResource("3_ejhsm")
+active_skill_1 = ExtResource("1_8ns6y")
+active_skill_2 = ExtResource("2_3vtc6")
+passive_skill = ExtResource("4_loe00")
 metadata/_custom_type_script = "uid://byxjmy0w01tjw"

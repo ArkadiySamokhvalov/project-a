@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgyor58yun3h"
-path="res://.godot/imported/heavy_weapons_01.png-37d947239994b41d78eabf4990746b62.ctex"
+uid="uid://bt7hxyxdow758"
+path="res://.godot/imported/paket_active_2.png-135c8552962603fd65bb497d95446b0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/skills/placeholders/heavy_weapons_01.png"
-dest_files=["res://.godot/imported/heavy_weapons_01.png-37d947239994b41d78eabf4990746b62.ctex"]
+source_file="res://resources/skills/images/paket_active_2.png"
+dest_files=["res://.godot/imported/paket_active_2.png-135c8552962603fd65bb497d95446b0e.ctex"]
 
 [params]
 
