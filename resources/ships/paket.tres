@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://beiy6coh2c56a"]
+
+[ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_7ukkj"]
+[ext_resource type="Texture2D" uid="uid://b8ctnavrosa1f" path="res://resources/ships/images/paket.png" id="2_d0wnw"]
+
+[resource]
+script = ExtResource("1_7ukkj")
+ship_name = "Пакет"
+ship_texture = ExtResource("2_d0wnw")
+rotate_for_team = true
+metadata/_custom_type_script = "uid://byxjmy0w01tjw"

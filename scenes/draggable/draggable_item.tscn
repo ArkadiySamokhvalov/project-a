@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://0cua74njgc5w"]
+
+[ext_resource type="Script" uid="uid://dskwks6tfoqs0" path="res://scenes/draggable/draggable_item.gd" id="1_rb4c8"]
+
+[node name="DraggableItem" type="Control" unique_id=1390155247]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_rb4c8")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1517609806]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

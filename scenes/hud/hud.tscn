@@ -1,0 +1,417 @@
+[gd_scene format=3 uid="uid://bwfsuvh1vgjmi"]
+
+[ext_resource type="Script" uid="uid://b2suninsf5quk" path="res://scenes/hud/skill.gd" id="1_48c2t"]
+[ext_resource type="Script" uid="uid://dyccqj18pnac1" path="res://scenes/hud/hud.gd" id="1_c45xl"]
+[ext_resource type="PackedScene" uid="uid://di1dg7i85wkdg" path="res://scenes/ship/ship.tscn" id="1_cgeww"]
+[ext_resource type="Texture2D" uid="uid://sk1dt5sturai" path="res://scenes/hud/icons/cog-svgrepo-com.svg" id="2_mq0y1"]
+[ext_resource type="Texture2D" uid="uid://y6rydf4rgimy" path="res://scenes/hud/icons/checkbox-svgrepo-com.svg" id="3_go0ap"]
+[ext_resource type="Texture2D" uid="uid://bba5vkchvy0h1" path="res://scenes/hud/icons/checkbox-checked-svgrepo-com.svg" id="4_nhd55"]
+[ext_resource type="Resource" uid="uid://beiy6coh2c56a" path="res://resources/ships/paket.tres" id="6_8nkf1"]
+[ext_resource type="Texture2D" uid="uid://brq04rfylwqqh" path="res://scenes/hud/icons/cancel2-svgrepo-com.svg" id="6_q6mn5"]
+[ext_resource type="Resource" uid="uid://b4f4t1tx5wofs" path="res://resources/ships/proxy.tres" id="7_558d4"]
+[ext_resource type="Resource" uid="uid://cb0wnfocvjghe" path="res://resources/ships/stack.tres" id="8_4m1a1"]
+[ext_resource type="Texture2D" uid="uid://djlvx4hpm1t8o" path="res://scenes/hud/icons/checkmark2-svgrepo-com.svg" id="8_8nkf1"]
+[ext_resource type="Resource" uid="uid://t36mpkh4xq6x" path="res://resources/ships/firewall.tres" id="9_iioc1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_48c2t"]
+font_size = 34
+
+[sub_resource type="LabelSettings" id="LabelSettings_cgeww"]
+font_size = 36
+
+[sub_resource type="LabelSettings" id="LabelSettings_c45xl"]
+font_size = 36
+
+[node name="HUD" type="CanvasLayer" unique_id=1534492280]
+script = ExtResource("1_c45xl")
+
+[node name="Container" type="VBoxContainer" parent="." unique_id=1590055803]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 20.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Top" type="HBoxContainer" parent="Container" unique_id=781446275]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Container/Top" unique_id=888925759]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+
+[node name="SettingsButton" type="TextureButton" parent="Container/Top/MarginContainer" unique_id=733722558]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+texture_normal = ExtResource("2_mq0y1")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="MarginContainer2" type="MarginContainer" parent="Container/Top" unique_id=1722608932]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_right = 240
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/Top/MarginContainer2" unique_id=1968639517]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="PhaseName" type="Label" parent="Container/Top/MarginContainer2/VBoxContainer" unique_id=1152388052]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "РАССТАНОВКА"
+label_settings = SubResource("LabelSettings_48c2t")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Top/MarginContainer2/VBoxContainer" unique_id=1139678995]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="LeftPlayer" type="HBoxContainer" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer" unique_id=433753500]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 40
+
+[node name="Nickname" type="Label" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer" unique_id=1085758657]
+layout_mode = 2
+text = "Ник_первого_игрока"
+label_settings = SubResource("LabelSettings_cgeww")
+
+[node name="Time" type="Label" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer" unique_id=1635060041]
+layout_mode = 2
+text = "30"
+label_settings = SubResource("LabelSettings_c45xl")
+
+[node name="Timer" type="Timer" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer" unique_id=47836438]
+
+[node name="Checkbox" type="TextureButton" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer" unique_id=656885570]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture_normal = ExtResource("3_go0ap")
+texture_pressed = ExtResource("4_nhd55")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="LeftPlayer2" type="HBoxContainer" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer" unique_id=1313682591]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 40
+
+[node name="Checkbox" type="TextureButton" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer2" unique_id=802622003]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture_normal = ExtResource("3_go0ap")
+texture_pressed = ExtResource("4_nhd55")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Time" type="Label" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer2" unique_id=200260477]
+layout_mode = 2
+text = "30"
+label_settings = SubResource("LabelSettings_c45xl")
+
+[node name="Timer" type="Timer" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer2" unique_id=1016165948]
+
+[node name="Nickname" type="Label" parent="Container/Top/MarginContainer2/VBoxContainer/HBoxContainer/LeftPlayer2" unique_id=596781806]
+layout_mode = 2
+text = "Ник_второго_игрока"
+label_settings = SubResource("LabelSettings_cgeww")
+
+[node name="Center" type="HBoxContainer" parent="Container" unique_id=47967118]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Left" type="MarginContainer" parent="Container/Center" unique_id=106571814]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/Center/Left" unique_id=2113750719]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Control" type="Control" parent="Container/Center/Left/VBoxContainer" unique_id=866116941]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Left/VBoxContainer/Control" unique_id=1056330358 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("6_8nkf1")
+
+[node name="Control2" type="Control" parent="Container/Center/Left/VBoxContainer" unique_id=2144241423]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Left/VBoxContainer/Control2" unique_id=1912668952 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("7_558d4")
+
+[node name="Control3" type="Control" parent="Container/Center/Left/VBoxContainer" unique_id=559450022]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Left/VBoxContainer/Control3" unique_id=181621285 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("8_4m1a1")
+
+[node name="Control4" type="Control" parent="Container/Center/Left/VBoxContainer" unique_id=1022165547]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Left/VBoxContainer/Control4" unique_id=1358072577 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("9_iioc1")
+
+[node name="Spacer" type="Control" parent="Container/Center" unique_id=226749810]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Right" type="MarginContainer" parent="Container/Center" unique_id=491870076]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/Center/Right" unique_id=918406865]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Control" type="Control" parent="Container/Center/Right/VBoxContainer" unique_id=1001689851]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Right/VBoxContainer/Control" unique_id=1716242303 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("6_8nkf1")
+team_id = "right"
+
+[node name="Control2" type="Control" parent="Container/Center/Right/VBoxContainer" unique_id=1699172735]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Right/VBoxContainer/Control2" unique_id=1984050274 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("7_558d4")
+team_id = "right"
+
+[node name="Control3" type="Control" parent="Container/Center/Right/VBoxContainer" unique_id=310567056]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Right/VBoxContainer/Control3" unique_id=422669611 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("8_4m1a1")
+team_id = "right"
+
+[node name="Control4" type="Control" parent="Container/Center/Right/VBoxContainer" unique_id=1547814492]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="Ship" parent="Container/Center/Right/VBoxContainer/Control4" unique_id=647812036 instance=ExtResource("1_cgeww")]
+layout_mode = 0
+data = ExtResource("9_iioc1")
+team_id = "right"
+
+[node name="Bottom" type="HBoxContainer" parent="Container" unique_id=1006498358]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Container/Bottom" unique_id=262820363]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+
+[node name="CancelButton" type="TextureButton" parent="Container/Bottom/MarginContainer" unique_id=1768189589]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+texture_normal = ExtResource("6_q6mn5")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="LeftPlayerSkills" type="MarginContainer" parent="Container/Bottom" unique_id=1334683007]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Bottom/LeftPlayerSkills" unique_id=1228430051]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Skill" type="Control" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer" unique_id=929494784]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer/Skill" unique_id=1398016584]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skill2" type="Control" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer" unique_id=1412482889]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer/Skill2" unique_id=688613924]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skill3" type="Control" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer" unique_id=443821649]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer/Skill3" unique_id=543462974]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skill4" type="Control" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer" unique_id=1430410251]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/LeftPlayerSkills/HBoxContainer/Skill4" unique_id=1185215516]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RightPlayerSkills" type="MarginContainer" parent="Container/Bottom" unique_id=1516005667]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Bottom/RightPlayerSkills" unique_id=1722596291]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Skill" type="Control" parent="Container/Bottom/RightPlayerSkills/HBoxContainer" unique_id=1296025292]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/RightPlayerSkills/HBoxContainer/Skill" unique_id=1862118772]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skill2" type="Control" parent="Container/Bottom/RightPlayerSkills/HBoxContainer" unique_id=2083730425]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/RightPlayerSkills/HBoxContainer/Skill2" unique_id=1499375587]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skill3" type="Control" parent="Container/Bottom/RightPlayerSkills/HBoxContainer" unique_id=416791636]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/RightPlayerSkills/HBoxContainer/Skill3" unique_id=743652247]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skill4" type="Control" parent="Container/Bottom/RightPlayerSkills/HBoxContainer" unique_id=580670718]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+script = ExtResource("1_48c2t")
+
+[node name="Icon" type="TextureRect" parent="Container/Bottom/RightPlayerSkills/HBoxContainer/Skill4" unique_id=994388365]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="Container/Bottom" unique_id=197403802]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+
+[node name="AcceptButton" type="TextureButton" parent="Container/Bottom/MarginContainer2" unique_id=888752363]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+texture_normal = ExtResource("8_8nkf1")
+ignore_texture_size = true
+stretch_mode = 5

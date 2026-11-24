@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://q2rm5geogsu6"]
+
+[ext_resource type="PackedScene" uid="uid://cw7aoidc6pquw" path="res://scenes/field/field.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://bwfsuvh1vgjmi" path="res://scenes/hud/hud.tscn" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=518598788]
+
+[node name="Field" parent="." unique_id=1657336420 instance=ExtResource("1_o5qli")]
+
+[node name="HUD" parent="." unique_id=1534492280 instance=ExtResource("2_0wfyh")]

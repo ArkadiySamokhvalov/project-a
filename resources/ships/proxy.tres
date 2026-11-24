@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://b4f4t1tx5wofs"]
+
+[ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_0vjvm"]
+[ext_resource type="Texture2D" uid="uid://chta0k5f0lced" path="res://resources/ships/images/proxy.png" id="2_42q4w"]
+
+[resource]
+script = ExtResource("1_0vjvm")
+ship_name = "Прокси"
+ship_texture = ExtResource("2_42q4w")
+visual_scale = Vector2(0.9, 0.9)
+metadata/_custom_type_script = "uid://byxjmy0w01tjw"

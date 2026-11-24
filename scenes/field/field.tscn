@@ -1,0 +1,244 @@
+[gd_scene format=4 uid="uid://cw7aoidc6pquw"]
+
+[ext_resource type="Texture2D" uid="uid://c4oh76u1irhpe" path="res://scenes/field/bg.jpg" id="1_ouf45"]
+[ext_resource type="Texture2D" uid="uid://bdwkek7iy8ebw" path="res://scenes/field/square.png" id="2_na1ap"]
+[ext_resource type="Texture2D" uid="uid://cg20f34n2t1wl" path="res://scenes/field/square_bottom.png" id="3_6kmgl"]
+[ext_resource type="Texture2D" uid="uid://c7d1u4lnrqw5m" path="res://scenes/field/square_right.png" id="4_kudqm"]
+[ext_resource type="Texture2D" uid="uid://dtbxvwc1g7tx4" path="res://scenes/field/square_full.png" id="5_34kk3"]
+[ext_resource type="Script" uid="uid://cdr11unr5lwaf" path="res://scenes/field/cell.gd" id="6_kudqm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hwmp"]
+texture = ExtResource("2_na1ap")
+texture_region_size = Vector2i(360, 360)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5em6a"]
+texture = ExtResource("3_6kmgl")
+texture_region_size = Vector2i(360, 360)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qds7q"]
+texture = ExtResource("4_kudqm")
+texture_region_size = Vector2i(360, 360)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ai316"]
+texture = ExtResource("5_34kk3")
+texture_region_size = Vector2i(360, 360)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_6kmgl"]
+tile_size = Vector2i(360, 360)
+sources/0 = SubResource("TileSetAtlasSource_1hwmp")
+sources/1 = SubResource("TileSetAtlasSource_5em6a")
+sources/2 = SubResource("TileSetAtlasSource_qds7q")
+sources/3 = SubResource("TileSetAtlasSource_ai316")
+
+[node name="Field" type="Node2D" unique_id=1657336420]
+metadata/_edit_group_ = true
+
+[node name="Background" type="TextureRect" parent="." unique_id=1393800654]
+offset_left = 240.0
+offset_top = 180.0
+offset_right = 1618.0
+offset_bottom = 900.0
+scale = Vector2(1.046, 1)
+mouse_filter = 2
+texture = ExtResource("1_ouf45")
+expand_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=966579777]
+position = Vector2(240, 180)
+scale = Vector2(0.5, 0.5)
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAAAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAACAAAAAAAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAADAAAAAAAAAAAAAAADAAEAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAIAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAMAAwAAAAAAAAAHAAAAAgAAAAAAAAAHAAEAAgAAAAAAAAAHAAIAAgAAAAAAAAAAAAMAAQAAAAAAAAABAAMAAQAAAAAAAAACAAMAAQAAAAAAAAADAAMAAQAAAAAAAAAEAAMAAQAAAAAAAAAFAAMAAQAAAAAAAAAGAAMAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_6kmgl")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1571455013]
+offset_left = 240.0
+offset_top = 180.0
+offset_right = 420.0
+offset_bottom = 360.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 8
+
+[node name="Cell" type="Control" parent="GridContainer" unique_id=662105010]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell2" type="Control" parent="GridContainer" unique_id=1342074211]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell3" type="Control" parent="GridContainer" unique_id=1616551635]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell4" type="Control" parent="GridContainer" unique_id=674115106]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell5" type="Control" parent="GridContainer" unique_id=1728789266]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell6" type="Control" parent="GridContainer" unique_id=1666635441]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell7" type="Control" parent="GridContainer" unique_id=1865675882]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell8" type="Control" parent="GridContainer" unique_id=283828604]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell9" type="Control" parent="GridContainer" unique_id=669066133]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell10" type="Control" parent="GridContainer" unique_id=608148792]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell11" type="Control" parent="GridContainer" unique_id=1080988197]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell12" type="Control" parent="GridContainer" unique_id=411751394]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell13" type="Control" parent="GridContainer" unique_id=1746679948]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell14" type="Control" parent="GridContainer" unique_id=649558342]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell15" type="Control" parent="GridContainer" unique_id=1238898908]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell16" type="Control" parent="GridContainer" unique_id=1007833711]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell17" type="Control" parent="GridContainer" unique_id=1483079930]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell18" type="Control" parent="GridContainer" unique_id=1858964940]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell19" type="Control" parent="GridContainer" unique_id=1839819616]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell20" type="Control" parent="GridContainer" unique_id=560009769]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell21" type="Control" parent="GridContainer" unique_id=2143048129]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell22" type="Control" parent="GridContainer" unique_id=184775824]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell23" type="Control" parent="GridContainer" unique_id=1925510927]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell24" type="Control" parent="GridContainer" unique_id=1621446225]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell25" type="Control" parent="GridContainer" unique_id=2110166913]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell26" type="Control" parent="GridContainer" unique_id=1484776776]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell27" type="Control" parent="GridContainer" unique_id=1291412184]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell28" type="Control" parent="GridContainer" unique_id=385959866]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+
+[node name="Cell29" type="Control" parent="GridContainer" unique_id=1324842248]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell30" type="Control" parent="GridContainer" unique_id=183674339]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell31" type="Control" parent="GridContainer" unique_id=635193829]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"
+
+[node name="Cell32" type="Control" parent="GridContainer" unique_id=902588986]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+script = ExtResource("6_kudqm")
+team_id = "right"

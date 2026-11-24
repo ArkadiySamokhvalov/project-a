@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://t36mpkh4xq6x"]
+
+[ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_n2i7u"]
+[ext_resource type="Texture2D" uid="uid://f0ud6tjcdo7d" path="res://resources/ships/images/firewall.png" id="2_2d5sy"]
+
+[resource]
+script = ExtResource("1_n2i7u")
+ship_name = "Фаерволл"
+ship_texture = ExtResource("2_2d5sy")
+visual_scale = Vector2(0.9, 0.9)
+metadata/_custom_type_script = "uid://byxjmy0w01tjw"

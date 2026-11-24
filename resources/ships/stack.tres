@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://cb0wnfocvjghe"]
+
+[ext_resource type="Script" uid="uid://byxjmy0w01tjw" path="res://resources/ship_data.gd" id="1_wix6d"]
+[ext_resource type="Texture2D" uid="uid://ddjjogdo2fojw" path="res://resources/ships/images/stack.png" id="2_16b3s"]
+
+[resource]
+script = ExtResource("1_wix6d")
+ship_name = "Стэк"
+ship_texture = ExtResource("2_16b3s")
+visual_scale = Vector2(0.9, 0.9)
+metadata/_custom_type_script = "uid://byxjmy0w01tjw"
